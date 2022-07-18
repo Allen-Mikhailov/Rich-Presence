@@ -1,25 +1,40 @@
 ﻿// C# program to print Hello World!
 using System;
 using System.Threading;
+using System.Runtime.InteropServices;
 
 // Class declaration
 class Program
 {
+    // Closing Stuff
+    [DllImport("user32.dll")]
+    static extern bool ShowWindow(IntPtr hWnd, int nCmdShow);
+
+    [DllImport("Kernel32")]
+    private static extern IntPtr GetConsoleWindow();
+
+    const int SW_HIDE = 0;
+    const int SW_SHOW = 5;
 
     // Main Method
     static void Main(string[] args)
     {
+        // Closing Console
+        IntPtr hwnd;
+        hwnd = GetConsoleWindow();
+        ShowWindow(hwnd, SW_HIDE);
 
         var discord = new Discord.Discord(998051529309311046, (UInt64)Discord.CreateFlags.Default);
         var activityManager = discord.GetActivityManager();
 
         var activity = new Discord.Activity
         {
-            State = "In Play Mode",
-            Details = "Playing the Trumpet!",
+            State = "Testing Custom discord Rich presence",
+            Details = "I dont know what to put here",
             Timestamps =
               {
                   Start = 5,
+                  End = 10,
               },
             Assets =
               {
@@ -28,28 +43,12 @@ class Program
                   SmallImage = "foo smallImageKey", // Small Image Asset Value
                   SmallText = "foo smallImageText", // Small Image Tooltip
               },
-            Party =
-              {
-                  Id = "foo partyID",
-                  Size = {
-                      CurrentSize = 1,
-                      MaxSize = 4,
-                  },
-              },
-            Secrets =
-              {
-                  Match = "foo matchSecret",
-                  Join = "foo joinSecret",
-                  Spectate = "foo spectateSecret",
-              },
             Instance = true,
         };
 
         int i = 0;
         while (true)
         {
-            i = (i + 1)%15;
-
             if (i == 0)
             {
                 activityManager.UpdateActivity(activity, (result) =>
@@ -67,6 +66,8 @@ class Program
 
             discord.RunCallbacks();
             Thread.Sleep(1000);
+
+            i = (i + 1) % 15;
         }
     }
 }
