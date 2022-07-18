@@ -1,0 +1,15 @@
+C:\Users\allenmik\Documents\Code\C\DiscordRPCTest\bin\Debug\net6.0\DiscordRPCTest.exe
+C:\Users\allenmik\Documents\Code\C\DiscordRPCTest\bin\Debug\net6.0\DiscordRPCTest.deps.json
+C:\Users\allenmik\Documents\Code\C\DiscordRPCTest\bin\Debug\net6.0\DiscordRPCTest.runtimeconfig.json
+C:\Users\allenmik\Documents\Code\C\DiscordRPCTest\bin\Debug\net6.0\DiscordRPCTest.dll
+C:\Users\allenmik\Documents\Code\C\DiscordRPCTest\bin\Debug\net6.0\DiscordRPCTest.pdb
+C:\Users\allenmik\Documents\Code\C\DiscordRPCTest\obj\Debug\net6.0\DiscordRPCTest.csproj.AssemblyReference.cache
+C:\Users\allenmik\Documents\Code\C\DiscordRPCTest\obj\Debug\net6.0\DiscordRPCTest.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\allenmik\Documents\Code\C\DiscordRPCTest\obj\Debug\net6.0\DiscordRPCTest.AssemblyInfoInputs.cache
+C:\Users\allenmik\Documents\Code\C\DiscordRPCTest\obj\Debug\net6.0\DiscordRPCTest.AssemblyInfo.cs
+C:\Users\allenmik\Documents\Code\C\DiscordRPCTest\obj\Debug\net6.0\DiscordRPCTest.csproj.CoreCompileInputs.cache
+C:\Users\allenmik\Documents\Code\C\DiscordRPCTest\obj\Debug\net6.0\DiscordRPCTest.dll
+C:\Users\allenmik\Documents\Code\C\DiscordRPCTest\obj\Debug\net6.0\refint\DiscordRPCTest.dll
+C:\Users\allenmik\Documents\Code\C\DiscordRPCTest\obj\Debug\net6.0\DiscordRPCTest.pdb
+C:\Users\allenmik\Documents\Code\C\DiscordRPCTest\obj\Debug\net6.0\DiscordRPCTest.genruntimeconfig.cache
+C:\Users\allenmik\Documents\Code\C\DiscordRPCTest\obj\Debug\net6.0\ref\DiscordRPCTest.dll
