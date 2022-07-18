@@ -45,23 +45,28 @@ class Program
             Instance = true,
         };
 
+        int i = 0;
         while (true)
         {
-            discord.RunCallbacks();
-            Thread.Sleep(15000);
-            Console.WriteLine("It worked :D");
+            i = (i + 1)%15;
 
-            activityManager.UpdateActivity(activity, (result) =>
+            if (i == 0)
             {
-                if (result == Discord.Result.Ok)
+                activityManager.UpdateActivity(activity, (result) =>
                 {
-                    Console.WriteLine("Success!");
-                }
-                else
-                {
-                    Console.WriteLine("Failed");
-                }
-            });
+                    if (result == Discord.Result.Ok)
+                    {
+                        Console.WriteLine("Updated!");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Update Failed");
+                    }
+                });
+            }
+
+            discord.RunCallbacks();
+            Thread.Sleep(1000);
         }
     }
 }
